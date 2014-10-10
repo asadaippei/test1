@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background:#F0F0F0 url(../img/bg_contents.png) repeat-x;
+	font-family:'Times New Roman';
+	font-size:12px;
+	color:#666666;
+	letter-spacing:0.1em;
+}
+a:link,
+a:visited {
+	color:#5F9FA5;
+	text-decoration:underline;
+}
+a:hover,
+a:active {
+	color:#FF9900;
+}
+a img {
+	border:none;
+}
+
+#header {
+	width:800px;
+	height:133px;
+	margin:0 auto;
+}
+#header h1 {
+	width:390px;
+	height:63px;
+	padding-top:25px;
+	float:left;
+	line-height:1.6em;
+	font-size:24px;
+	font-weight:bold;
+}
+
+#header img{vertical-align: -10px}
+
+#header h1 a {
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+#header .copy {
+	width:390px;
+	height:53px;
+	padding-top:35px;
+	float:right;
+	line-height:2em;
+	text-align:right;
+	color:#FFFFFF;
+
+}
+#navi {
+	width:805px;
+	height:46px;
+	list-style-type:none;
+	text-align:center;
+}
+#navi li {
+	width:115px;
+	height:46px;
+	float:left;
+}
+#navi li a {
+	display:block;
+	width:115px;
+	height:36px;
+	padding-top:10px;
+	float:left;
+	line-height:1.6em;
+	background:url(../img/navi.png) no-repeat;
+	text-decoration:none;
+	color:#FFFFFF;
+}
+#navi li a:hover {
+	background-position:0 -46px;
+}
+
+#contents_01 #navi_01 a,
+#contents_02 #navi_02 a,
+#contents_03 #navi_03 a,
+#contents_04 #navi_04 a,
+#contents_05 #navi_05 a {
+	background-position:0 -92px;
+	font-weight:bold;
+}
+#contents {
+	clear:both;
+	width:760px;
+	margin:10px auto 30px auto;
+	padding:20px;
+	background-color:#FFFFFF;
+}
+
+#main {
+
+    position:relative;
+	margin-bottom:20px;
+	padding:20px;
+	background-color:#88BCCB;
+	color:#FFFFFF;
+}
+#main h2 {
+	margin-bottom:15px;
+	font-size:20px;
+	line-height:1.8em;
+}
+#main .photo {
+	float:left;
+	margin-right:20px;
+}
+.main-text {
+    font-size:14px;
+    line-height:1.8em;
+    padding-top:20px;
+    padding-bottom:40px;
+}
+
+/*スライド*/
+.bxslider{
+margin:0px 10PX 10px 38PX;
+}
+#slide_img{
+
+	height:270px;
+}
+
+#footer {
+	clear:both;
+	height:80px;
+	padding-top:20px;
+	background:url(../img/bg_footer.png) center;
+}
+#footer address {
+	font-size:10px;
+	font-style:normal;
+	text-align:center;
+	color:#FFFFFF;
+}
+
+
+/* クリアフィックスハック */
+.clearfix:after { 
+	content:"";
+    display:block;
+    clear:both;
+} 
+.clearfix { 
+	display: inline-block; 
+}
+/* Mac版IE除外 \*/
+.clearfix { 
+	display: block; 
+}
